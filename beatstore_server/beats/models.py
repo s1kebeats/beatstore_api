@@ -14,6 +14,7 @@ class Beat(models.Model):
 
     # Files
     wrap = models.ImageField( upload_to='wraps/', default='wraps/S.svg' )
+    
     wave = models.FileField( upload_to='audio/wave/', default='' )
     mp3 = models.FileField( upload_to='audio/mp3/', default='' )
 
